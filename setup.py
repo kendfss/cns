@@ -6,12 +6,12 @@ with open('requirements.txt', 'r') as fob:
     requirements = fob.readlines()
 
 setup(
-    name='cns',
+    name='ff',
     version='1.0.0',
     author='Kenneth Sabalo',
     author_email='kennethsantanasablo@gmail.com',
     url='https://github.com/kendfss/cns',
-    description="REPL for pythonic file system management and navigation",
+    description="A repl interface to FFMPEG's FFPlay",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -25,7 +25,7 @@ setup(
     requires=requirements,
     entry_points={
         'console_scripts': [
-            'cns = cns.cli:main'
+            'ff = ff.cli:main'
         ]
     },
     python_requires='>=3.10',
